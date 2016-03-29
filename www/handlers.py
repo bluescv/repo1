@@ -16,6 +16,6 @@ from www.models import User, Comment, Blog, next_id
 def index(request):
     users = yield from User.findAll()
     return {
-        '__template__': 'test.html',
+        '__template__': 'blogs.html',
         'users': users
     }
